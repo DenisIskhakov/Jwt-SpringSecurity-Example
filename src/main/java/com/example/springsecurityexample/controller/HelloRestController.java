@@ -29,7 +29,7 @@ public class HelloRestController {
 
         UserDetails userPrincipal = (UserDetails)authentication.getPrincipal();
         System.out.println("User principal name =" + userPrincipal.getUsername());
-        return "Hello Admin  userPrincipal.getUsername()";
+        return "Hello Admin " + userPrincipal.getUsername();
     }
 
 }
